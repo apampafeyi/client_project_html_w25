@@ -10,7 +10,7 @@ body {
 
 /* Headings */
 h1 {
-    color: #00274C; /* UM Blue */
+    color: #00274C;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 10px;
@@ -19,7 +19,7 @@ h1 {
 h2 {
     color: #00274C;
     font-size: 1.5rem;
-    background-color: #FFCB05; /* UM Maize */
+    background-color: #FFCB05;
     padding: 10px;
     border-radius: 5px;
 }
@@ -35,8 +35,8 @@ h3 {
     position: absolute;
     left: -9999px;
     top: -9999px;
-    background-color: #FFCB05; /* UM Maize */
-    color: #00274C; /* UM Blue */
+    background-color: #FFCB05;
+    color: #00274C;
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
@@ -53,24 +53,34 @@ h3 {
 nav {
     background-color: white;
     border-bottom: 3px solid #00274C;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     list-style: none;
     padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 5px 15px;
 }
 
 nav a {
     color: #00274C;
-    padding: 10px 15px;
+    padding: 12px 15px;
     font-size: 1rem;
     text-decoration: none;
     border-radius: 5px;
     border: 2px solid transparent;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 nav a:hover, nav .active {
@@ -89,6 +99,17 @@ img {
 /* Main Content */
 main {
     padding: 20px;
+}
+
+/* Bullet Points (Lists) */
+ul, ol {
+    padding-left: 25px;
+    margin-left: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
 
 /* Grid Layout */
